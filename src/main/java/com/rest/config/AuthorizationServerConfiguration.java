@@ -53,7 +53,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 			.withClient("guest").authorizedGrantTypes("password", "authorization_code", "refresh_token", "implicit")
 			.authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
 			.scopes("read","write","trust")
-			.secret("guest").accessTokenValiditySeconds(100).refreshTokenValiditySeconds(3000);
+			.secret("guest").accessTokenValiditySeconds(1000).refreshTokenValiditySeconds(3000);
 	}
 
 	
